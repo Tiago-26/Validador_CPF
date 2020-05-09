@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://control/" xmlns:tns="http://control/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="isCPF" type="tns:isCPF"/>
+
+  <xs:element name="isCPFResponse" type="tns:isCPFResponse"/>
+
+  <xs:complexType name="isCPF">
+    <xs:sequence>
+      <xs:element name="cpf" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="isCPFResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
